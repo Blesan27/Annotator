@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="resources/css/style1.css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link href="resources/dist/cropper.css" rel="stylesheet">
+        <title>Annotating</title>
+    </head>
+    
+    <body>
+        
+        
+        <header> 
+            <div class="image_to_crop">
+                <img id="image" src="resources/img/vegetables2.jpg"/>
+            </div>
+        </header>
+
+        <section class="row main-section">
+            
+            <div class="sub-section-left">
+                <div class="total__labels">
+<!--
+                    <div class="label__sections">
+                        <select class="label_selector" id="label">
+                            <option value="vehicle" selected>vehicle</option>
+                            <option value="human">human</option>
+                        </select>
+                        <input class="label_selector addlabel" type="text"  placeholder="..name"style="padding:5px;">
+                        <select class="label_selector" id="quality">
+                            <option value="good" selected>Good</option>
+                            <option value="bad">Bad</option>
+                        </select>
+                        <button class="btn"><i class="ion-ios-close delete_icon_button"></i></button>
+                        <button class="btn"><i class="ion-ios-checkmark save_button"></i></button>
+                        <div class="preview_cropped"></div>
+                        
+                    </div>
+                    
+                    <div class="label__sections">
+
+                        <select class="label_selector" id="label">
+                        </select>
+                        <input class="label_selector addlabel" type="text" placeholder="..name"style="padding:5px;">
+                        <select class="label_selector" id="quality">
+                            <option value="good" selected>Good</option>
+                            <option value="bad">Bad</option>
+                        </select>
+                        <button class="btn"><i class="ion-ios-close delete_icon_button"></i></button>
+                        <button class="btn"><i class="ion-ios-checkmark save_button"></i></button>
+                        <div class="preview_cropped"></div>
+                    </div>
+                    
+-->                    
+                    
+                </div>
+                
+                <div class="add_label_section">
+                    <p>Add Label:</p>
+                    <input class="label_selector addlabel" type="text" id="label_name" placeholder="-----"style="padding:5px;">
+                    <button class="button_add">
+                        ADD
+                    </button>
+                </div>
+            </div>
+            
+            <div class="sub-section-right">
+                
+                <div class="profile-section">
+                    <div class="username__profile">
+                        <p id="username__">UserName</p>
+                    </div>
+                    <div class="images__count">
+                        <p>Images Left: <span id="left">5</span></p>
+                    </div>
+                    <button class="logout__button">
+                        Logout
+                    </button>
+                </div>
+                
+                
+                <div class="total-image-section">
+                    <div class="total_images_view" id="#im_1">
+                        <img id="photo" style="max-height: 100%;">
+                    </div>
+                </div>
+                
+                
+            </div>
+            
+        </section>
+        <div class="final_save">
+            <button class="final_save_button"><i class="ion-android-done-all"></i></button>
+        </div>
+        <div class="next_Image">
+            <button class="next_button"><i class="ion-android-download"></i></button>
+        </div>
+
+    </body>
+    <script src="resources/dist/cropper.js"></script>
+    <script src="script.js"></script>
+    
+    
+</html>

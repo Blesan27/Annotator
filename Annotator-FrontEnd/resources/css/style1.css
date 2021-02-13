@@ -1,0 +1,300 @@
+@font-face{
+    font-family:'Monospace';
+    src: 
+        url(resources/fonts/CutiveMono-Regular.ttf)
+        format('truetype');
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Monospace;
+    font-weight: 200;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: white;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
+html{
+    background-color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    color: #555;
+}
+.row{
+    margin: auto;
+    max-width: 1140px;
+}
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.span-1-of-2 {
+	width: 49.2%;
+}
+.span-2-of-3 {
+	width: 66.13%; 
+}
+
+.span-1-of-3 {
+	width: 32.26%; 
+}
+
+
+.main-section{
+    width:80%;
+    height: 20%;
+    position: absolute;
+    bottom: 0;
+    /*background-color: rgba(255, 112, 23, 0.31);
+    */
+    background-image: linear-gradient(rgba(255, 255, 255, 0.33),rgba(255, 255, 255, 0.03)),url(ocean.jpg);
+    left:50%;
+    transform: translateX(-50%);
+    padding: 20px 20px 0 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4), -2px -2px 5px rgba(0, 0, 0, 0.4), 2px -2px 5px rgba(0, 0, 0, 0.4);
+}
+.sub-section-right{
+    background-color: rgba(47, 136, 195, 0.76);
+    height: 100%;
+    float: right;
+    width: 25%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 4px;
+}
+
+
+.profile-section{
+    width: 47%;
+    display: inline-block;
+    /*background-color:  rgb(252, 141, 92);
+    */
+    color: rgb(252, 141, 92);
+    border-right: 2px rgb(252,141,92) solid;
+    float: left;
+    /*
+    margin: 3px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    */
+    height: 100%;
+}
+
+.total-image-section{
+    width: 47%;
+    display: inline-block;
+    float: right;
+    margin: 3px;
+    height: 100%;
+    overflow-y: scroll;
+    /*
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: rgb(252, 141, 92);*/
+}
+
+
+/*Header Section*/
+header{
+    width: 100vw;
+    height: 100vh;
+    /*
+    background-image: linear-gradient(rgba(44, 44, 44, 0.23),rgba(129, 128, 128, 0.31)),url(../img/vegetables1.jpg);
+    */
+    background-image:linear-gradient(rgba(255, 255, 255, 0.13),rgba(255, 255, 255, 0.17)),url(dark-wood.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.images__count{
+    padding-top: 10px;
+    font-size: 80%;
+}
+.logout__button{
+    position: absolute;
+    bottom: 15px;
+    background-color: #e27e2e;
+    border-style: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: rgb(47, 32, 32);
+    margin-left: 4px;
+}
+.username__profile{
+    overflow-x: scroll;
+}
+.total_images_view{
+    display: block;
+    height: 70%;
+    margin: 5px;
+}
+
+/*SUBSECTION LABELS*/
+.sub-section-left{
+    display: inline-block;
+    background-color: rgba(222, 184, 135, 0.63);
+    width: 74%;
+    height:100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 4px;
+    max-height: 100%;
+}
+.total__labels{
+    display: block;
+    height: 100%;
+    width: 84%;
+    overflow-y: scroll;
+    white-space: nowrap;
+    padding-right: 100px;
+    overflow-x:scroll;
+    overflow-y: hidden;
+}
+.label__sections{
+    display: inline-block;
+    background-color: rgba(67, 33, 47, 0.36);
+    height: 100%;
+    width: 19%;
+    border-radius: 9px;
+    vertical-align: text-top;
+    margin-right: 17px;
+}
+.add_label_section{
+    position: fixed;
+    top: 10%;
+    right: 26.4%;
+    display: block;
+    background-color: rgb(216, 120, 52);
+    height: 80%;
+    width: 12%;
+    border-radius: 9px;
+    color: rgba(0, 0, 0, 0.69);
+    box-shadow: -2px 0px 5px;
+}
+
+.button_add{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/*INSIDE EACH BOXES*/
+
+.label_selector{
+    display: block;
+    border-style: none;
+    color: white;
+    margin: auto;
+    margin-top: 5px;
+    border-radius: 5px;
+    background-color:rgba(79, 185, 212, 0.99);
+    width: 80%;
+}
+
+.delete_icon_button{
+    color: red;
+    font-size: 20px;
+}
+
+.save_button{
+    color:black;
+    font-size: 20px;
+}
+.green_save_button{
+    color: #4CAF50;
+}
+.preview_cropped{
+    width: 30%;
+    height:20%;
+    display: inline-block;
+}
+
+.btn{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-left: 10px;
+    vertical-align: top;
+    margin-bottom: 10px;
+    padding-top: 4px;
+}
+
+
+.final_save{
+    position: absolute;
+    color: aquamarine;
+    bottom: 10%;
+    left: 5%;
+    transform: translate(-50%,50%);
+}
+.final_save_button{
+    font-size: 30px;
+    border-radius: 50%;
+    padding: 6px;
+    color: #e27e22;
+    background-color: rgba(47, 136, 195, 0.76);
+}
+canvas { 
+    display: inline;
+    border: 1px solid #e27e22;
+    margin: auto;
+    border-radius: 3px;
+    max-height: 100%;
+    max-width: 100%;
+    transition-duration: 0.5s;
+    margin-top: 5px;
+}
+canvas:hover{
+    max-width: 600%;
+    transform:translate(-55%,-68%);
+    display: block;
+    max-height: 600%;
+}
+.image_to_crop{
+    height: 80%;
+    max-height: 80%;
+    margin: auto;
+}
+
+.next_Image{
+    position: absolute;
+    bottom: 1.5%;
+    right: 10.7%;
+}
+.next_button{
+    font-size: 18px;
+    background-color: deepskyblue;
+    border-radius: 10px;
+}
+.next_button:hover,
+.next_button:active{
+    background-color: #e27e22;
+}
+.ion-android-download{
+    color: rgba(0, 0, 0, 0.73);
+}

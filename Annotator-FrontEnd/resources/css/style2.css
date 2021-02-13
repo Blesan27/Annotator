@@ -1,0 +1,231 @@
+@font-face{
+    font-family:'Monospace';
+    src: 
+        url(resources/fonts/CutiveMono-Regular.ttf)
+        format('truetype');
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Monospace;
+    font-weight: 200;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
+.row{
+    margin: auto;
+    max-width: 1140px;
+}
+
+header{
+    width: 100vw;
+    height: 100vh;
+    /*
+    background-image: linear-gradient(rgba(44, 44, 44, 0.23),rgba(129, 128, 128, 0.31)),url(../img/vegetables1.jpg);
+    */
+    background-image:linear-gradient(rgba(255, 255, 255, 0.13),rgba(255, 255, 255, 0.17)),url(dark-wood.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.main_section{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 20px;
+    height: 71%;
+    width: 75%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.33),rgba(255, 255, 255, 0.03)),url(ocean.jpg);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4), -2px 2px 5px rgba(0, 0, 0, 0.4), 2px -2px 5px rgba(0, 0, 0, 0.4);
+}
+
+h1{
+    font-size: 300%;
+    padding: 20px;
+    color: #e27e22;
+    font-family: Monospace;
+    font-weight: 100;
+}
+.add_user_icon{
+    color: #01f5ff;
+    float: right;
+    padding: 10px;
+    font-size: 150%;
+}
+.add_user_icon:hover{
+    cursor: pointer;
+}
+.set_folder_icon{
+    cursor: pointer;
+    color: darkorange;
+    float: right;
+    padding: 10px;
+    font-size: 150%;
+    margin-right: 10px;
+}
+.set_folder_icon{
+    cursor: pointer;
+}
+.back_icon{
+    font-size: 150%;
+    color: rgba(79, 185, 212, 0.99);
+    position: absolute;
+    left: 2%;
+}
+
+h2{
+    display:inline-block;
+    font-size: 200%;
+    font-weight: 100;
+    color: #e27e22;
+}
+.middle_section{
+    position: relative;
+    width: 100%;
+    height: 91%;
+    border-radius: 10px;
+    background-color:  rgba(222, 184, 135, 0.63);
+    padding: 5px;
+    overflow-y: scroll;
+    bottom: 0.7%;
+    font-size: 90%;
+    padding-bottom: 10%;
+}
+.users{
+    display: block;
+    margin: 4px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 110px;
+    border-bottom-right-radius: 110px;
+    background-color: rgba(145, 105, 76, 0.85);
+    overflow: hidden;
+    margin-bottom: 9px;
+}
+.username,
+.phonenumber,
+.mail,
+.no-of-images,
+.settings{
+    display: inline-block;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 5px;
+    vertical-align: middle;
+    background-color: rgba(255, 255, 255, 0.94);
+    width: 22.6%;
+    float: left;
+}
+.settings{
+    width: auto;
+    float: right;
+    vertical-align: middle;
+    display: inline;
+    background-color: transparent;
+    border-radius: 50%;
+}
+.settings:hover{
+    background-color: #e27e22;
+}
+
+
+
+
+.user_edit_section{
+    position: relative;
+    width: 100%;
+    height: 91%;
+    border-radius: 10px;
+    background-color:  rgba(222, 184, 135, 0.63);
+    padding: 5px;
+    overflow-y: scroll;
+    bottom: 0.7%;
+    display: none;
+}
+fieldset{
+    background-color: rgba(145, 105, 76, 0.85);
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border-color: orange;
+}
+legend{
+    margin-left: 45%;
+    color: #ffffff;
+    font-size: 150%;
+}
+.input-field,.opt{
+    background-color: rgba(255, 255, 255, 0.58);
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 70px;
+    border: none;
+    border-style: none;
+}
+.input-field:focus,
+.input-firld:active{
+    background-color: #fff;
+    border-style: none;
+}
+label{
+    display: inline-block;
+    padding-left: 20px;
+    margin-top: 30px;
+}
+
+span{
+    color: rgba(79, 185, 212, 0.99);
+    font-size: 120%;
+    margin-left: 80px;
+}
+input,opt{
+    border: none;
+}
+input:focus,.input:active,input:required{
+    border-style: none;
+    border:none;
+}
+
+.verified{
+    margin-left: 20px;
+    font-size: 200%;
+    vertical-align: middle;
+    color: red;
+}
+#save-update,
+.deleteButton{
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #e27e22;
+    color: #fff
+}
+#save-update:hover,
+#save-update:active,
+.deleteButton:hover{
+    background-color: #a55c19;
+    cursor: pointer;
+}
+
+.deleteButton{
+    position: absolute;
+    left: 4%;
+    bottom: 8%;
+    display: none;
+}
+.uploadForm{
+    display: none
+}

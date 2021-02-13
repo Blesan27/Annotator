@@ -1,0 +1,104 @@
+@font-face{
+    font-family:'Monospace';
+    src: 
+        url(resources/fonts/CutiveMono-Regular.ttf)
+        format('truetype');
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    color: #555;
+}
+.row{
+    margin: auto;
+    max-width: 1140px;
+}
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.span-1-of-2 {
+	width: 49.2%;
+}
+.span-2-of-3 {
+	width: 66.13%; 
+}
+
+.span-1-of-3 {
+	width: 32.26%; 
+}
+header{
+    background-image: linear-gradient(rgba(32, 101, 232, 0.21),rgba(0, 0, 0, 0.71)),linear-gradient(rgba(224, 224, 224, 0.13),rgba(10, 10, 10, 0.37)),url(ocean.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+h1{
+    font-size: 300%;
+    padding: 60px;
+    color: #e27e22;
+    font-family: Monospace;
+    font-weight: 100;
+}
+h2{
+    border:1px solid #ccc;
+    color:#e27e22;
+    padding-left: 15px;
+    margin-bottom: 23px;
+}
+.sign-up-form{
+    margin: auto;
+    width: 50%;
+    border: 1px solid #fff;
+}
+
+.sign-up-form div{
+    margin: 10px;
+}
+.values{
+    text-align: center;
+    margin: auto;
+}
+input{
+    padding: 8px;
+    width: 50%
+}
+input[type=button],
+input[type=button]:visited{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 100px;
+    width: 20%;
+    color: #fff;
+    transition: background-color 0.2s, color 0.2s, border 0.2s;
+    background-color: #e27e22;
+    border: 1px solid;
+    border-color: #e27e22;
+}
+
+input[type=button]:hover{
+    background-color: #b4651d;
+    border-color: #b4651d;
+}
+section{
+    position: absolute;
+    background-color: transparent;
+    right: 0;
+    bottom: 0;
+    font-size: 70%;
+    word-spacing: 4px;
+    padding: 10px;
+}

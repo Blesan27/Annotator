@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>AdminsPage</title>
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link href="resources/css/style2.css" type="text/css" rel="stylesheet">
+        
+    </head>
+    
+    <header>
+        <h1>Welcome Admin_ :</h1>
+        <div class="main_section row">
+            <h2>Users</h2>
+            <i class="add_user_icon ion-person-add" alt="AddUserIcon"></i>
+            <i id="setFolder" class="set_folder_icon ion-ios-folder" alt="selectFolderIcon"></i>
+            <form id="uploadForm" class="uploadForm" action="/" method="post" enctype="multipart/form-data" onsubmit="return onSubmit(this)">
+                <input type="file" name = "files" multiple>
+                <input type=submit value="submit">
+            </form>
+            <div class="middle_section">
+                <div class="users">
+                    <div class="username">
+                        blesan
+                    </div>
+                    <div class="phonenumber">
+                        799279372
+                    </div>
+                    <div class="mail">
+                        awdasdas@email.com
+                    </div>
+                    <div class="no-of-images">
+                        no.ofImages annotated
+                    </div>
+                    <i id="moveToUserEdit" class="ion-more settings"></i>
+                </div>
+                <div class="users">
+                    <div class="username">
+                        blesan
+                    </div>
+                    <div class="phonenumber">
+                        799279372
+                    </div>
+                    <div class="mail">
+                        awdasdas@email.com
+                    </div>
+                    <div class="no-of-images">
+                        no.ofImages annotated
+                    </div>
+                    <i id="moveToUserEdit" class="ion-more settings"></i>
+                </div>
+                
+                
+            </div>
+            <div class="user_edit_section">
+                <fieldset><legend>&nbsp;User Info_ </legend>
+                    <i class="back_icon ion-android-arrow-back" alt="backArrow"></i>
+                    <label for="user_name">
+                        <span>UserName&nbsp;&nbsp;:</span>
+                        <input type="text" class="input-field UN" name="user_name" id="user_name" required>
+                    </label>
+                    
+                    <label for="email">
+                        <span>Email&nbsp;&nbsp;&nbsp; :</span>
+                        <input type="email" class="input-field E" name="email" id="email" required>
+                    </label>
+                    
+                    <label for="first_name">
+                        <span>FirstName :</span>
+                        <input type="text" class="input-field FN" name="first_name" id="first_name" required>
+                    </label>
+                    
+                    <label for="lastname">
+                        <span>LastName :</span>
+                        <input type="text" class="input-field LN" name="last_name" id="lastname">
+                    </label>
+                    <label for="phnumber">
+                        <span>Ph.Number :</span>
+                        <input type="text" class="input-field PN" name="phnumber" id="phnumber" required>
+                    </label>
+                    <label for="dob">
+                        <span>DOB&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</span>
+                        <input type="date" class="input-field DOB" name="dob" id="dob" required>
+                    </label>
+                    <label for="password">
+                        <span>Password&nbsp; :</span>
+                        <input type="password" class="input-field P" name="password" id="password" required>
+                    </label>
+                    <label>
+                        <span>Role&nbsp;&nbsp;&nbsp;&nbsp; :</span>
+                        <select class="opt" id="roles">
+                            <option value="User" selected>User</option>
+                            <option value="Admin">Admin</option>
+                        </select>
+                    </label>
+                    
+                    <input id="save-update" type="button" value="SAVE/UPDATE">
+                    <input id="delete_button" class="deleteButton" type="button" value="Delete">
+                </fieldset>
+            </div>
+        </div>
+        
+    </header>
+    
+    <script src="script2.js"></script>
+    
+</html>
